@@ -6,11 +6,13 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// 模拟的是数据库
 var db = make(map[string]string)
 
+// 路由器
 func setupRouter() *gin.Engine {
 	// Disable Console Color
-	// gin.DisableConsoleColor()
+	gin.DisableConsoleColor()
 	r := gin.Default()
 
 	// Ping test
